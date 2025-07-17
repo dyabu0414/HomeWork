@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.contents{
+    width: 700px;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.canvas{
+    height: auto;
+    min-height: 130px;
+    width: 700px;
+    border: 3px solid #000;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    margin: 32px auto 20px auto;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 18px;
+}
+
+.btn{
+    width: 110px;
+    height: 42px;
+    font-size: 1.07rem;
+    border-radius: 8px;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:active{        /* 버튼 클릭 시 효과*/
+    transform: scale(0.97);
+    background: gray;
+}
+
+.btn:disabled{      /* 버튼 비활성화 시 효과*/
+    color: white;
+    cursor: not-allowed;
+}
+
+.box-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    
+}   
+
+.box-wrapper input[type = "checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
