@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+.ball{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    line-height: 40px;
+    margin: 3px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.yellow{
+    background-color: #fbc400;
+}
+.blue{
+    background-color: #3c88ee;
+}
+.red{
+    background-color: #e93f33;
+}
+.gray{
+    background-color: #aaaaaa;
+}
+.green{
+    background-color: #2dc26b;
+}
+
+.match{
+    border: 3px solid rgba(0, 0, 0, 0.399);
+    box-shadow: 0 0 15px #ff8400;
+}
+
+.bonus{
+    border: 3px solid rgba(0, 0, 0, 0.399);
+    box-shadow: 0 0 15px #00cfff;
+}
