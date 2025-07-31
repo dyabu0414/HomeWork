@@ -1,0 +1,76 @@
+@charset "UTF-8"
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #b6fcb6;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2b7a2b;
+}
+
+.transaction-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.transaction-form select,
+.transaction-form input,
+.transaction-form button {
+  padding: 8px;
+  border: 1px solid #90ee90;
+  border-radius: 4px;
+  outline: none;
+}
+
+.transaction-form button {
+  background-color: #90ee90;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.transaction-form button:hover {
+  background-color: #77dd77;
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #dfffd6;
+  border-radius: 6px;
+  background-color: #f6fff6;
+}
+
+.transaction-item span {
+  margin-right: 10px;
+}
+
+.transaction-item button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.summary-box {
+  border-top: 1px solid #b6fcb6;
+  padding-top: 10px;
+  margin-top: 20px;
+  color: #2b7a2b;
+}
