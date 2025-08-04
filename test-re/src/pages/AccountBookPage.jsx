@@ -45,7 +45,8 @@ function AccountBookPage() {
   const [state, dispatch] = useReducer(transactionReducer, initialState);
 
   return (
-    <div className='container'>
+    <div>
+      <main className='container'>
       <h1>가계부</h1>
       <TransactionForm dispatch={dispatch} />
       <Summary income={state.income} expense={state.expense} />
@@ -67,6 +68,7 @@ function AccountBookPage() {
         }}
       >전체 삭제
       </button>
+      </main>
     </div>
   );
 }

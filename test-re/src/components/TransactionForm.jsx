@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import '../assets/css/accountBook.css';
 
 
+
 function TransactionForm({ dispatch }) {
-  const [type, setType] = useState('지출');
+  const [type, setType] = useState('');
   const [text, setText] = useState('');
   const [amount, setAmount] = useState('');
 
@@ -26,12 +27,13 @@ function TransactionForm({ dispatch }) {
     dispatch({ type: 'ADD', payload: newTransaction });
     setText('');
     setAmount('');
-    setType('지출');
+    setType('');
   };
 
   return (
     <form onSubmit={handleSubmit} className="transaction-form">
       <select value={type} onChange={(e) => setType(e.target.value)}>
+        <option value="==선택==">==선택==</option>
         <option value="지출">지출</option>
         <option value="수입">수입</option>
       </select>
